@@ -1,0 +1,38 @@
+[
+    {
+      "urlBackground":
+        "https://images.unsplash.com/photo-1600359695469-9d9b028c0147?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "title": "Europa",
+      "description": "O continente mais antigo do mundo"
+    },
+    {
+      "urlBackground":
+        "https://images.unsplash.com/photo-1570897620600-f5f649e4968c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      "title": "América do Norte",
+      "description": "O continente norte americano"
+    },
+    {
+      "urlBackground":
+        "https://images.unsplash.com/photo-1652288509711-8055ef20018f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
+      "title": "América do Sul",
+      "description": "O continente sul americano"
+    },
+    {
+      "urlBackground":
+        "https://images.unsplash.com/photo-1610397909731-995882394aaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80",
+      "title": "África",
+      "description": "O continente africano"
+    },
+    {
+      "urlBackground":
+        "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=842&q=80",
+      "title": "Ásia",
+      "description": "O continente asiático"
+    },
+    {
+      "urlBackground":
+        "https://images.unsplash.com/photo-1572295215355-60431b92883f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+      "title": "Oceania",
+      "description": "O continente oceânico"
+    }
+  ]
