@@ -12,6 +12,12 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <link
+            rel="shortcut icon"
+            href="images/logo.png"
+            type="image/x-icon"
+          />
+
           <title>World Trip</title>
         </Head>
 
