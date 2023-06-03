@@ -32,11 +32,10 @@ export default function Continent() {
   });
 
   useEffect(() => {
-    getDatas();
-    console.log(continentRoute);
+    loadData();
   }, [router.query]);
 
-  async function getDatas() {
+  async function loadData() {
     if (continentRoute !== undefined) {
       await api
         .get(`continents/${continentRoute}`)
@@ -46,14 +45,17 @@ export default function Continent() {
 
   return (
     <Box>
-      <Header backUrl="/" />
+      <Header />
 
       <Banner
+        maxWidth={1440}
         flexDirection={"column"}
         justifyContent={"flex-end"}
         bgImage={continent?.continentImgUrl}
-        height={500}
+        height={[500, 450, 375]}
         pb={59}
+        pl={[8]}
+        mx={"auto"}
       >
         <BoxContainer isMargin>
           <Heading color={"gray.50"}>{continent?.name}</Heading>
@@ -66,7 +68,7 @@ export default function Continent() {
             <Text
               color={"gray.500"}
               fontSize={[14, 18, 24]}
-              px={isWideVersion ? 0 : 4}
+              px={isWideVersion ? 2 : 4}
             >
               {continent?.description}
             </Text>
@@ -76,7 +78,7 @@ export default function Continent() {
             mt={!isWideVersion ? "16" : "0"}
             flex={1}
             justify={"center"}
-            px={isWideVersion ? 0 : 4}
+            px={isWideVersion ? 2 : 4}
             align={"center"}
             gap={[34, 38, 42]}
           >
@@ -105,7 +107,7 @@ export default function Continent() {
             Cidades +100
           </Heading>
 
-          <SimpleGrid pt={10} gap={[5, 45]} columns={[1, 2, 3, 4]}>
+          <SimpleGrid pt={10} gap={[5, 45]} columns={[1, 2, 3, 4]} px={2}>
             {continent?.cities.map((city) => (
               <CityItem
                 key={city.name}

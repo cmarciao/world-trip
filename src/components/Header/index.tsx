@@ -3,23 +3,19 @@ import { useRouter } from "next/router";
 
 import { IoIosArrowBack } from "react-icons/io";
 
-interface HeaderProps {
-  backUrl?: string;
-}
-
-export function Header({ backUrl }: HeaderProps) {
-  const { push } = useRouter();
+export function Header() {
+  const { back, asPath } = useRouter();
 
   return (
     <Flex
       maxWidth={1440}
       mx={"auto"}
       align={"center"}
-      justify={"center"}
+      justify={"flex-start"}
       h={[16, 20, 24]}
       pos={"relative"}
     >
-      {!!backUrl && (
+      {asPath !== '/' && (
         <IconButton
           aria-label="Back"
           background={"transparent"}
@@ -28,13 +24,18 @@ export function Header({ backUrl }: HeaderProps) {
           icon={<IoIosArrowBack />}
           h={[5, 6, 8]}
           w={[5, 6, 8]}
-          pos={"absolute"}
-          left={[12, 20, 36]}
-          top={"35%"}
-          onClick={() => push("/")}
-        />
+          onClick={back}
+          />
       )}
-      <Img src={"/images/logo.svg"} alt="Worldtrip" height={[9, 10, 12]} />
+      
+      <Img
+        pos={"absolute"}
+        height={[9, 10, 12]}
+        src={"/images/logo.svg"}
+        alt="Worldtrip"
+        transform={"translateX(-40%)"}
+        left={"50%"}
+        />
     </Flex>
   );
 }

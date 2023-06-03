@@ -20,23 +20,14 @@ export function Slider({ datas }: SliderProps) {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
+      navigation      
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
       {datas.map((data) => {
-        const urlLink = data.title
-          .split(" ")
-          .join("-")
-          .toLocaleLowerCase()
-          .normalize("NFKD")
-          .replace(/[\u0300-\u036f]/g, "");
-
         return (
           <SwiperSlide key={data.title}>
-            <Link href={urlLink}>
+            <Link href={data.endpoint}>
               <Box
                 cursor={"pointer"}
                 display={"flex"}

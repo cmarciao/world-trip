@@ -14,9 +14,9 @@ export function BoxContainer({
   return (
     <Box
       w={"100%"}
-      maxWidth={1160}
+      maxWidth={1440}
       mx={"auto"}
-      px={isMargin ? [2, 2, 2, 2, 0] : 0}
+      px={isMargin ? [2, 8, 8, 8, 0] : 0}
       {...props}
     >
       {children}

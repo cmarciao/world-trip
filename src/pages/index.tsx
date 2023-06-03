@@ -35,10 +35,10 @@ const Home: NextPage = () => {
   });
 
   useEffect(() => {
-    getData();
+    loadData();
   }, []);
 
-  async function getData() {
+  async function loadData() {
     await api.get("/").then((response) => setData(response.data));
   }
 
