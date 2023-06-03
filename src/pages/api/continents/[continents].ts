@@ -11,10 +11,10 @@ export default function handler(
       const { continents: continentRouter } = req.query 
       
       switch(continentRouter) {
-        case "europa": {
-          return res.json(data.europa); 
+        case "europe": {
+          return res.json(data.europe); 
         }
-        case "america-do-norte": {
+        case "north-america": {
           return res.json(data['america-do-norte']);
         }
         case "africa": {
@@ -23,7 +23,7 @@ export default function handler(
         case "oceania": {
           return res.json(data.oceania);
         }
-        case "america-do-sul": {
+        case "south-america": {
           return res.json(data['america-do-sul']);
         }
         case "asia": {
