@@ -46,8 +46,8 @@ const Home: NextPage = () => {
     <Box pb={[6, 10]}>
       <Header />
 
-      <Banner>
-        <BoxContainer pt={20} pb={70} isMargin>
+      <Banner maxWidth={1440} mx={"auto"}>
+        <BoxContainer pt={20} pb={70} px={8} isMargin>
           <Heading
             fontWeight={"medium"}
             color={"gray.100"}
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
             <br />
             infinitas possibilidades.
           </Heading>
-          <Text as="p" mt={5} color={"gray.100"} fontSize={[12, 16, 20]}>
+          <Text as="p" mt={5} color={"gray.100"} fontSize={[12, 16, 20]} >
             Chegou a hora de tirar do papel a viagem que você <br /> sempre
             sonhou.
           </Text>
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
               alt="Airplane"
               position={"absolute"}
               top={55}
-              right={[0, 0, 0, 38, 140]}
+              right={[0, 0, 0, 0, 38, 140]}
               rotate={"3deg"}
             />
           )}
