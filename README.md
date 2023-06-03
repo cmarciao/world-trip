@@ -16,6 +16,9 @@ O projeto é um desafio do Ignite da Rockectseat. A ideia é apresentar breves i
 - **Chackra UI**: Biblioteca com componentes prontos para utilizarmos na UI.
 - **Swiper**: Biblieteca usada para o desenvolvimento do swiper.
 
+# Dependências
+1. **NodeJS**: https://nodejs.org/en
+
 # Como executar o projeto
 ## Clone o repositório
 ```bash
